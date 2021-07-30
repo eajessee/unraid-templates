@@ -1,13 +1,40 @@
+###
+### INSTRUCTIONS
+###
+#   
+#   Find the Provider's' you wish to use
+#   Between #BEGIN and #END replace the # on the front of the lines with a space
+#   Fill out necessary settings
+#
+###
+###
+###
+---
 providers:
-  - name: namecheap
-    domain: example.com
-    host: "@"
-    password: e5322165c1d74692bfa6d807100c0310
-    
-  - name: cloudflare
-    zone_identifier: id
-    domain: domain.com
-    host: "@"
-    ttl: 600
-    token: 5s36mEYvzk
-    ip_version: ipv4
+##
+## NameCheap (namecheap.com)
+##
+#
+#BEGIN
+#- name: namecheap
+#  domain: example.com
+#  host: "@"
+# password: e5322165c1d74692bfa6d807100c0310
+#END
+   
+###
+### CLOUDFLARE "www.cloudflare.com"
+###
+# Some text here about settings, best practices, etc.
+#
+# "host" is your host and can be a subdomain, "@" or "*" generally
+#
+#BEGIN
+ - name: cloudflare
+   zone_identifier: id
+   domain: domain.com
+   host: "@"
+   ttl: 600
+   token: 5s36mEYvzk
+   ip_version: ipv4
+#END
